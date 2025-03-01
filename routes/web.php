@@ -7,4 +7,4 @@ Route::get('/', function () {
 });
 Route::get('/home', function () {
     return view('layouts.home');
-});
+})->middleware('verified');
